@@ -14,6 +14,8 @@
                 {
                     builder.AddConsole();
                 });
+
+            loggerFactory.AddFile("Logs/{Date}.log");
             
             var logger = loggerFactory.CreateLogger("Program");
 
